@@ -44,3 +44,5 @@ the IDE.
   exit in the failure case (with no errors), however in the case of the real
   Flutter daemon, the process does not exit (probably something else is keeping
   it alive).
+- The issue is not `git`-specific. Running any command from `msys2` seems to
+  trigger the issue (for example, using `msys64\usr\bin\cal.exe` in the `.bat`).
