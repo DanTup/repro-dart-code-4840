@@ -37,9 +37,12 @@ the IDE.
 
 ### Additional Notes:
 
-- The issue only seems to occur with the node client
+- The issue only seems to occur with the Node client
   (`daemon_client_run_me.js`). The equivalent Dart code
   (`daemon_client_run_me.dart`) does not seem to cause the issue.
+- The issue only seems to occur with the Dart daemon script
+  (`fake_daemon.dart`). The equivalent Node code (`fake_daemon.js`) does not
+  have the issue.
 - Removing the long wait at the end of `fake_daemon.dart` causes the process to
   exit in the failure case (with no errors), however in the case of the real
   Flutter daemon, the process does not exit (probably something else is keeping
