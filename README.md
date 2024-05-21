@@ -21,6 +21,8 @@ the IDE.
   simplified to just execute the command and not do anything with the result.
 - `fake_daemon.dart` - the fake `flutter daemon` which just echos back and input
   it gets, and prints when the `stdin` stream closes.
+- `fake_daemon.js` - a Node version of the daemon script which does not
+  reproduce the issue (see additional notes below).
 
 ### Running the Test:
 
